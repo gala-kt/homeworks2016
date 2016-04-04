@@ -26,7 +26,7 @@ public class PtimitiveTypes {
 		
 //		c = -1; ERROR!
 		
-		c = '\002'; // сппециальный знак с кодом 002
+		c = '\002'; // специальный знак с кодом 002
 		c = Character.MAX_VALUE;
 		c = Character.MIN_VALUE;
 		
