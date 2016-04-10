@@ -1,6 +1,6 @@
 package lesson160407;
 
-public class DoWhuleExample {
+public class DoWhileExample {
 
 	public static void main(String[] args) {
 		
