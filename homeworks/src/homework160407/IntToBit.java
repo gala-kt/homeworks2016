@@ -13,9 +13,8 @@ public class IntToBit {
 		}
 	
 		int numint = Integer.parseInt(args[0]);
-		System.out.println("Your integer number is:");
-		System.out.println(numint);
-		System.out.println("Your nuber in bits is: ");
+		System.out.println("Your integer number is: " + numint);
+		System.out.println("Your number in bits is: ");
 		
 		while (numint > 0) {
 			switch (numint % 2) {
@@ -31,6 +30,7 @@ public class IntToBit {
 			
 		}
 		
+	
 	}
 
 }
