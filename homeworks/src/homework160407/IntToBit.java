@@ -1,7 +1,5 @@
 package homework160407;
 
-import javax.print.attribute.standard.NumberOfInterveningJobs;
-
 public class IntToBit {
 
 	public static void main(String[] args) {
@@ -13,19 +11,22 @@ public class IntToBit {
 		}
 	
 		int numint = Integer.parseInt(args[0]);
+		int numdev;
 		System.out.println("Your integer number is: " + numint);
 		System.out.println("Your number in bits is: ");
 		
 		while (numint > 0) {
-			switch (numint % 2) {
-			case 0:
-				System.out.println(0);
-				break;
-			
-			case 1:
-				System.out.println(1);
-				break;
-			}
+//			switch (numint % 2) {
+//			case 0:
+//				System.out.println(0);
+//				break;
+//			
+//			case 1:
+//				System.out.println(1);
+//				break;
+//			}
+			numdev = (numint % 2 > 0) ? 1 : 0;
+			System.out.println(numdev);
 			numint >>= 1;
 			
 		}
