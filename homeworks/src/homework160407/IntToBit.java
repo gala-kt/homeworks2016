@@ -15,6 +15,8 @@ public class IntToBit {
 		System.out.println("Your integer number is: " + numint);
 		System.out.println("Your number in bits is: ");
 		
+		String numi = Integer.toBinaryString(numint);
+		
 		while (numint > 0) {
 //			switch (numint % 2) {
 //			case 0:
@@ -31,6 +33,9 @@ public class IntToBit {
 			
 		}
 		
+//		Checking
+		System.out.println("Checking: right value is: " + numi);
+
 	
 	}
 
