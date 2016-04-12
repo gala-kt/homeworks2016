@@ -1,5 +1,6 @@
+package lesson160411;
 
-public class BreakExajmples {
+public class BreakExamples {
 
 	public static void main(String[] args) {
 		int x = 1;
