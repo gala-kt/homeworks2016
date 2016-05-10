@@ -26,9 +26,8 @@ public class Continue3dMatrix {
 		
 		OUTER: for (int matrixIn = 0; matrixIn < matrix.length; matrixIn++) {
 			for (int row = 0; row < matrix[matrixIn].length; row++) {
-//				System.out.println(Arrays.toString(matrix[matrixIn][row]));
+
 				for (int column = 0; column < matrix[matrixIn][row].length;column++) {
-//					System.out.print(matrix[matrixIn][row][column] + " ");
 					if (matrix[matrixIn][row][column] == 0) {
 						System.out.println("matrix: " + matrixIn + ", row: " + row + ", column: " + column);
 //						break;
@@ -37,7 +36,6 @@ public class Continue3dMatrix {
 					}
 					
 				}
-//				System.out.println();
 				
 			}
 //			System.out.println();
