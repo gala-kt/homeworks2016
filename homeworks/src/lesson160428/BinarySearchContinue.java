@@ -16,11 +16,10 @@ public class BinarySearchContinue {
 			
 			System.out.println(Arrays.toString(a));
 			
-			int result = binarySearch(a, 0);
+			int result = binarySearch(a, 150);
 			
 			System.out.println(result);
-			System.out.println(a[result]);
-			
+//			System.out.println(a[result]);
 		}
 		
 		static int binarySearch(int[] x, int key) {
@@ -28,22 +27,26 @@ public class BinarySearchContinue {
 				
 			    int left = 0;
 				int right = x.length - 1;
+//				неверное решение с переменной
+//				int position = 0;
 				
 				while (left <= right) {
-					int mid = left + (right - right) / 2;
+					int mid = left + (right - left) / 2;
 					if (x[mid] == key) {
 						return mid;
 					}
 					
 					if (x[mid] > key) { 
 						right = mid - 1;
+//						position = right;
 					} else {
 						left = mid + 1;
+//						position = left;
 					}
 					
 				}
 				
-				return -1;
+				return (left + 1) * -1;
 		
 		}
 
