@@ -18,10 +18,10 @@ public class BinarySearch {
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
 		
-		int result = Arrays.binarySearch(a, 1);
+		int result = Arrays.binarySearch(a, 150);
 		
 		System.out.println(result);
-		System.out.println(a[result]);
+//		System.out.println(a[result]);
 		
 //		 result = -7  Отрицательное число означает отсутствие ключа в массиве.
 //		              Семь - позиция числа в массиве (если б нужно было бы его поместить в массив) -7 + 1 = -6 и меняем щзнак на положительный. Либо если поменять знак на противоположный - 7ой элемент массива по счету.
