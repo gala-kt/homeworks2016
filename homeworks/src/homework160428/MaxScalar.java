@@ -14,22 +14,24 @@ public class MaxScalar {
 				{17,18,19,20}
 		};
 		
+		
+		System.out.println("---Using static matrix---");
 		int[] newScalar = maxScalar(a);
 		System.out.println(Arrays.toString(newScalar));
 		
-		System.out.println("-----------------");
-		
+		System.out.println();
+		System.out.println("---New random matrix---");
 		int[][] unknownMatrix = randomMatrix(4, 5, 1000);
 		for (int i = 0; i < unknownMatrix.length; i++) {
 			System.out.println(Arrays.toString(unknownMatrix[i]));
 		}
 		
-		System.out.println("-----------------");
 		
+		System.out.println();
+		System.out.println("---Scalar from random matrix---");		
 		newScalar = maxScalar(unknownMatrix);
 		System.out.println(Arrays.toString(newScalar));
 
-		
 		
 	}
 	
@@ -38,6 +40,9 @@ public class MaxScalar {
 		int[] max = new int[a.length];
 		
 		for (int i =0; i < a.length; i++) {
+			Arrays.sort(a[i]);
+//			System.out.println(Arrays.toString(a[i])); проверка сортировки каждой строки матрицы
+			
 			int fill = 0;
 			for (int j = 0; j < a[0].length; j++) {
 				fill = a[i][0];
@@ -46,7 +51,9 @@ public class MaxScalar {
 				}
 				
 			}
-
+			
+//     В чем ошибка??
+			
 //			for (int k = 0; k < max.length; k++) {
 //			max[k] = fill;
 //		}
