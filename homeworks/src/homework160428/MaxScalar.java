@@ -14,8 +14,22 @@ public class MaxScalar {
 				{17,18,19,20}
 		};
 		
-		int[] p = maxScalar(a);
-		System.out.println(Arrays.toString(p));
+		int[] newScalar = maxScalar(a);
+		System.out.println(Arrays.toString(newScalar));
+		
+		System.out.println("-----------------");
+		
+		int[][] unknownMatrix = randomMatrix(4, 5, 1000);
+		for (int i = 0; i < unknownMatrix.length; i++) {
+			System.out.println(Arrays.toString(unknownMatrix[i]));
+		}
+		
+		System.out.println("-----------------");
+		
+		newScalar = maxScalar(unknownMatrix);
+		System.out.println(Arrays.toString(newScalar));
+
+		
 		
 	}
 	
@@ -41,6 +55,18 @@ public class MaxScalar {
 		}
 		
 		return max;
+	}
+	
+	
+	static int[][] randomMatrix(int row, int column, int max) {
+		int[][] p = new int[row][column];
+		
+		for (int i = 0; i < p.length; i++) {
+			p[i] = FillArrayWithRandoms.randomArray(column, max);
+			
+		}
+		
+		return p;
 	}
 
 }
