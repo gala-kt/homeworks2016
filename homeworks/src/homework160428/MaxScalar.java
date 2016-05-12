@@ -27,11 +27,16 @@ public class MaxScalar {
 			int fill = 0;
 			for (int j = 0; j < a[0].length; j++) {
 				fill = a[i][0];
-				if (a[i][j] > fill) fill = a[i][j];
+				if (a[i][j] > fill) {
+					fill = a[i][j];
+				}
+				
 			}
-			for (int k = 0; k < max.length; k++) {
-				max[k] = fill;
-			}
+
+//			for (int k = 0; k < max.length; k++) {
+//			max[k] = fill;
+//		}
+			max[i] = fill;
 				
 		}
 		
